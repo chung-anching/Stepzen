@@ -1,7 +1,9 @@
 ## Stepzen OpenAI
 IBM Stepzen Demo OpenAI
-事先須申請 OPENAI API KEY
+事先須申請 OPENAI API KEY  
 
+
+  
 # AI回答問題
 ## step.1 創建名為 OpenAI-0904 的資料夾 和api/OpenAI-0904的端點
 stepzen init --endpoint=api/OpenAI-0904   
@@ -38,7 +40,9 @@ stepzen request '{
   }
 }'
 
-## step.5 得到回應
+## step.5 得到回應  
+
+
 
 # AI圖片生成 Creating a GraphQL API for DALL·E image generation 
 
