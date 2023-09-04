@@ -10,7 +10,7 @@ stepzen init --endpoint=api/OpenAI-0904
 What would you like to call your workspace? 輸入 OpenAI-0904
 
 ## step.2 將建openai資料夾，並自動生成 index.graphql
-stepzen import curl https://api.openai.com/v1/completions \
+``` stepzen import curl https://api.openai.com/v1/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer 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" \
   -d '{
@@ -24,9 +24,9 @@ stepzen import curl https://api.openai.com/v1/completions \
 	}' \
   --name openai \
   --query-name textCompletion \
-  --query-type TextCompletion
+  --query-type TextCompletion``` 
 
-  	CLI實作圖片示意如下：
+  CLI實作圖片示意如下：
   <img width="770" alt="截圖 2023-09-04 下午3 52 08" src="https://github.com/chung-anching/Stepzen/assets/59386373/ddfb5d24-51d8-4e52-8979-b6eea6f056e0">
 
 
