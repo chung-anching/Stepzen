@@ -1,6 +1,8 @@
-# Stepzen OpenAI
+## Stepzen OpenAI
 IBM Stepzen Demo OpenAI
+事先須申請 OPENAI API KEY
 
+# AI回答問題
 ## step.1 創建名為 OpenAI-0904 的資料夾 和api/OpenAI-0904的端點
 stepzen init --endpoint=api/OpenAI-0904   
 What would you like to call your workspace? 輸入 OpenAI-0904
@@ -38,4 +40,27 @@ stepzen request '{
 
 ## step.5 得到回應
 
-# AI創造圖片
+# AI圖片生成 Creating a GraphQL API for DALL·E image generation 
+
+## Step.1 將建openai_DALL·E資料夾，並自動生成 index.graphql
+stepzen import curl https://api.openai.com/v1/images/generations \
+  -H 'Content-Type: application/json' \
+  -H "Authorization: Bearer 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" \
+  -d '{
+    "prompt": "A cute baby sea otter"
+  }' \
+  --name openai_DALL·E \
+  --query-name generations \
+  --query-type GenerationResult
+  
+## step.2 stepzen deploy
+  Stepzen deploy
+
+## step.3 開始輸入圖片描述
+stepzen request '{
+  generations(prompt: "a sail flying over the horizon into the sunset") {
+    created data { url }
+  }
+}'
+
+## step.4 複製網址
