@@ -2,7 +2,7 @@
 IBM Stepzen Demo OpenAI
 
 ## step.1 創建名為 OpenAI-0904 的資料夾 和api/OpenAI-0904的端點
-stepzen init --endpoint=api/OpenAI-0904 /n
+stepzen init --endpoint=api/OpenAI-0904 \n
 What would you like to call your workspace? 輸入 OpenAI-0904
 
 ## step.2 將建openai資料夾，並自動生成 index.graphql
