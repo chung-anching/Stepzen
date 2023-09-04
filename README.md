@@ -1,5 +1,7 @@
 ## Stepzen OpenAI
 IBM Stepzen Demo OpenAI  
+
+  
 事先須申請 OPENAI API KEY  
 
 
