@@ -1,0 +1,22 @@
+type DataEntry {
+  url: String
+}
+
+type GenerationResult {
+  created: Int
+  data: [DataEntry]
+}
+
+type Query {
+  generations(prompt: String): GenerationResult
+    @rest(
+      method: POST
+      endpoint: "https://api.openai.com/v1/images/generations"
+      headers: [
+        {
+          name: "authorization"
+          value: "Bearer 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"
+        }
+      ]
+    )
+}
