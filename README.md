@@ -20,7 +20,7 @@ What would you like to call your workspace?
 ```
  stepzen import curl https://api.openai.com/v1/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer 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" \
+  -H "Authorization: Bearer OPENAI-API-KEY" \
   -d '{
 	  "model": "text-davinci-003",
 	  "prompt": "What is a language model and how is it related to AI?",
