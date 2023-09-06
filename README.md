@@ -65,7 +65,7 @@ stepzen request '{
 ```
 stepzen import curl https://api.openai.com/v1/images/generations \
   -H 'Content-Type: application/json' \
-  -H "Authorization: Bearer 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" \
+  -H "Authorization: Bearer OPENAI-API-KEY" \
   -d '{
     "prompt": "A cute baby sea otter"
   }' \
