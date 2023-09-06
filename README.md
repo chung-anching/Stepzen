@@ -38,7 +38,6 @@ What would you like to call your workspace?
   CLI實作圖片示意如下：  
   <img width="770" alt="截圖 2023-09-04 下午3 52 08" src="https://github.com/chung-anching/Stepzen/assets/59386373/ddfb5d24-51d8-4e52-8979-b6eea6f056e0">
 
-
 ## step.3 stepzen deploy
 ```
 stepzen deploy
